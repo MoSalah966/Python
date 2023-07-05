@@ -86,3 +86,31 @@ course = 'python for beginners'
 another = course[:]
 print(another) >> python for beginners 
 -
+---Formatted String---
+-
+first = 'john'
+last = 'smith'
+message = first + ' [' + last + '] is a coder'
+print(message) >> john [smith] is a coder 
+- or 
+first = 'john'
+last = 'smith'
+message = f'{first} [{last}] is a coder'
+print(message) >> john [smith] is a coder
+-
+to define formatted strings, prifix your string with f and then use curly braces to dynamically 
+insert values into your strings 
+-
+course = 'python for beginners'
+print(len(course))
+-
+len is a built function to calculate the length of string 
+methods are functions that belongs to something else or specific to some kind of object 
+methods like string.upper and functions like print or len 
+-
+course = 'python for beginners'
+print(course.upper()) >> PYTHON FOR BEGINNERS
+-
+course = 'python for beginners'
+print(course.find('p')) >> 0 
+-
