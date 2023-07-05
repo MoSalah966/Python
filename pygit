@@ -114,3 +114,83 @@ print(course.upper()) >> PYTHON FOR BEGINNERS
 course = 'python for beginners'
 print(course.find('p')) >> 0 
 -
+course = 'python for beginners'
+print(course.replace('beginners', 'absolute beginners')) 
+>> python for absolute beginners
+-
+course = 'python for beginners'
+print('python' in course) >> true 
+-
+the last code is a boolean value that gives true or false with "in operator"
+----------------------------
+---arithmetic operations---
+-
+print(10 / 3) >> 3.33333
+-
+print(10 // 3) >> 3 
+-
+print(10 % 3) >> the remaining of the devision
+-
+print(10 ** 3) >> the power 
+-
+augemented assignment operator is += 
+so x = x + 3 is equal to x += 3
+
+-
+x = 10
+x -= 3
+print(x) >> 7
+-
+------------------
+-
+x = 2.8
+print(round(x)) >> 3 
+-
+round give the approximate value 
+-
+x = 2.8
+print(abs(-2.9)) >> 2.9
+-
+import math  << this make math a string and can use methods with it like 
+
+-
+import math 
+print(math.ceil(2.9))  >> 3
+-
+import math 
+print(math.floor(2.9))  >> 2 
+-
+
+to learn more on math module search on python 3 math module 
+-----------------------------------------------------
+---if statements---
+-
+is_cold = True 
+is_hot = False 
+
+if is_hot:
+    print("it's a hot day")
+    print("drink some water")
+elif is_cold:
+    print("it's a cold day")
+    print("wear warm clothes")
+else:
+    print("enjoy your day")
+-
+price = 1000000
+has_good_credit= True 
+if has_good_credit:
+    down_payment = 0.1 * price 
+else:
+    down_payment = 0.2 * price
+print(f"down payment: ${down_payment}") >> down payment: $100000.0
+-
+------------------------------------
+---logical operator---
+-
+has_high_income = False
+has_good_credit = True
+
+if has_high_income and has_good_credit:
+    print("Eligable for loan") 
+-
