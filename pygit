@@ -70,3 +70,19 @@ this is the msp team
 
 '''
 -
+course = 'python for beginners'
+print(course[0]) >> p 
+-
+course = 'python for beginners'
+print(course[-1]) >> s 
+-
+course = 'python for beginners'
+print(course[0:3]) >> pyt 
+-
+course = 'python for beginners'
+print(course[0:]) >> python for beginners 
+-
+course = 'python for beginners'
+another = course[:]
+print(another) >> python for beginners 
+-
