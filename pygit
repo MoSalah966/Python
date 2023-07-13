@@ -383,4 +383,100 @@ xx
 xxxxx
 xx
 xx
+---------------------
+---lists---
 -
+names = ['ali', 'mohamed', 'ahmed']
+print(names[2]) >> ahmed
+-
+print(names[2:]) << this will list fourth to the end and not the third
+print(names[2:4]) << this will list from third to fifth
+now make a program choose the largest number in a list
+-
+numbers = [1, 4, 5, 6, 8, 3, 10]
+large = numbers[0]
+for number in numbers:
+    if number > large:
+        large = number
+print(large) > 10
+-------------------------------------
+---2D Lists---
+-
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7,8,9]
+]
+print(matrix[0][1]) >> 2
+-
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7,8,9]
+]
+matrix[0][1] = 20
+print(matrix[0][1]) >> 20
+-
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7,8,9]
+]
+for row in matrix:
+    for item in row:
+        print(item) >>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+----------------------
+---list method---
+string.append()
+string.remove()
+string.insert()
+string.clear()
+string.pop()  << remove last item on list
+string.sort
+string.reverse
+-
+numbers = [5, 2, 1, 7, 4]
+print(numbers.index(5) >> 0
+-
+numbers = [5, 2, 1, 7, 4]
+print(50 in numbers) >> false
+-
+numbers = [5, 2, 1, 7, 4]
+numbers2 = numbers.copy()
+numbers.append(10)
+print(numbers2) >> [5, 2, 1, 7, 4]
+-
+numbers = [5, 2, 1, 5, 2, 7, 8, 9, 1]
+uniques = []
+for number in numbers:
+    if number not in uniques:
+        uniques.append(number)
+print(uniques) >> [5, 2, 1, 7, 8, 9]
+-------------------------------------
+---tuples---
+tuple like list but unchangeable immutable
+-
+numbers = (1, 2, 3)
+numbers[0] = 10
+print(numbers[0]) >> error
+---------------------------------------
+---unpacking---
+-
+index = (1, 2, 3)
+x = index[0]
+y = index [1]
+z = index [2]
+this previous 3 lines equal:
+index = (1, 2, 3)
+x, y, z = index
+-------------------------------------
+---dictionaries---
