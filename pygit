@@ -1,15 +1,16 @@
-[Python Cheat Sheet (programmingwithmosh.com)](https://www.programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)
+[Python Cheat Sheet (programmingwithmosh.com)]
+(https://www.programmingwithmosh.com/wp-content/uploads/2019/02/Python-Cheat-Sheet.pdf)
 string is surrounded with '' like 
 #print ('mohamed') >> mohamed is a string 
 #print ('*' * 10) means ten astririsks.
 variables 
 #price = 10
-we can use functions with variables like #print (price) >> 10 
+we can use functions with variables like #print(price) >> 10
 here price is without quotations because it's a variable 
 4.5 is a float or floating point number 
 10 is integer 
 variable set to string >> name = 'mohamed'
-polean variable >> is_published = True 
+boolean variable >> is_published = True
 T in true is upper case 
 input is a function built in python 
 -
@@ -480,3 +481,24 @@ index = (1, 2, 3)
 x, y, z = index
 -------------------------------------
 ---dictionaries---
+with dictionaries we can store a punch of key value pairs
+we cannot replicate key
+-
+customer = {
+    "name": "john smith",
+    "age": 30,
+    "is_verified": True
+}
+print(customer["name"])
+
+-
+birth_year = input('Birth year: ')
+print(type(birth_year))
+age = 2023 - int(birth_year)
+print(type(age))
+print(age) >>
+Birth year: 1996
+<class 'str'>
+<class 'int'>
+27
+-
