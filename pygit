@@ -502,3 +502,91 @@ Birth year: 1996
 <class 'int'>
 27
 -
+phone = input("phone: ")
+digits_mapping = {
+    "1": "one",
+    "2": "two",
+    "3": "three",
+    "4": "four"
+}
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + " "
+    print(output) >>
+phone: 1349
+one three four !
+-------------------------------------------------
+emoji converter
+-
+message = input(">")
+words = message.split(' ')
+emojis = {
+    ":)": "😊"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
+ >>
+good morning :)
+good morning 😊
+--------------------------------------------------
+Functions
+functions is a container for a few lines of code that perform a specific task
+def is define so when python see this so this is for defining a function
+when define a function we need to leave two blank lines after
+we must always define our function first and then call them
+-
+def greet_user():
+    print('hi there!')
+    print('welcome aboard')
+
+
+print("Start")
+greet_user()
+print("Finish")
+>>
+Start
+hi there!
+welcome aboard
+Finish
+-------------------------------------------------
+Parameters
+how to pass info to your function?
+-
+def greet_user(name):
+    print(f'hi {name}')
+    print('welcome aboard')
+
+
+print("Start")
+greet_user('john')
+greet_user('mary')
+print("Finish")
+>>
+Start
+hi john
+welcome aboard
+hi mary
+welcome aboard
+Finish
+-
+name here is the parameter of the value tht we are obligated to pass a value for the parameter
+mary and john are the arguments for the parameter name
+--------------------
+keyword arguments
+there is a positional arguments like hi {first_name} {last_name} so it will give the first name put as it's the first one
+even if it is not so if we put smith john it will give hi smith john
+we can specify that here
+-
+def greet_user(first_name, last_name):
+    print(f'Hi {first_name} {last_name}!')
+    print('welcome aboard')
+
+
+print("Start")
+greet_user(last_name="smith", first_name="john")
+print("Finish")
+-
+first_name= john >> key value argument
+greet_user("john") >> positional argument
