@@ -1,5 +1,8 @@
-birth_year = input('Birth year: ')
-print(type(birth_year))
-age = 2023 - int(birth_year)
-print(type(age))
-print(age)
+def greet_user(first_name, last_name):
+    print(f'Hi {first_name} {last_name}!')
+    print('welcome aboard')
+
+
+print("Start")
+greet_user(last_name="smith", first_name="john")
+print("Finish")
