@@ -528,7 +528,7 @@ for word in words:
     output += emojis.get(word, word) + " "
 print(output)
  >>
-good morning :)
+>good morning :)
 good morning 😊
 --------------------------------------------------
 Functions
@@ -590,3 +590,170 @@ print("Finish")
 -
 first_name= john >> key value argument
 greet_user("john") >> positional argument
+the correct case is to use key argument after a positional argument
+-----------------------------------------------------------
+Return statement
+with return statement we can return values to the calling function
+-
+def square(number):
+    return number * number
+
+print(square(3))
+>> 9
+-
+def square(number):
+    print(number * number)
+
+print(square(3))
+>> 9
+   none
+-
+if we don't have a return value here so by default python return none after print function run
+----------------------------
+creating a reusable function
+-
+def emoji_converter(message):
+    words = message.split(" ")
+    emojis = {
+        ":)": "😊",
+        ":(": "😔"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+
+message = input(">")
+print(emoji_converter(message))
+---------------------------------
+exceptions
+-
+try:
+    age = int(input('age: '))
+    print(age)
+except ValueError:
+    print('Invalid value')
+> hi
+Invalid value
+-
+try:
+    age = int(input('age: '))
+    income = 20000
+    risk = income / age
+    print(age)
+except ZeroDivisionError:
+    print('age cannot be zero')
+except ValueError:
+    print('Invalid value')
+>0
+age cannot be zero
+----------------------------------
+comments
+#this is a comment
+------------------------
+classes
+when naming classes we don't use an underscore to separate multiple words, instead we capitalize the first letter
+of every word and this is called pascal naming convention
+-
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point()
+point1.draw()
+>> draw
+-
+class Point:
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point1 = Point()
+point1.x = 10
+point1.y = 20
+print(point1.x)
+point1.draw()
+>10
+ draw
+-
+each object "like point1" is a different instance of our points class
+so we use classes to define new types >> methods that we define in the body of the class >> also
+we have attributes that we can set anywhere in our programs
+---------------------------------
+constructors
+-
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point = Point(10, 20)
+print(point.y)
+>>20
+-
+after define >> the method come
+__init__ is a constructor
+-
+#the body of the person class
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print("talk")
+
+
+mohamed = Person("mohamed salah")
+print(mohamed.name)
+mohamed.talk()
+>>mohamed salah
+talk
+-
+#the body of the person class
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def talk(self):
+        print(f"Hi, I'm {self.name}")
+
+
+mohamed = Person("mohamed salah")
+mohamed.talk()
+>>Hi, I'm mohamed salah
+-----------------------------------------
+inheritance
+-
+# dog and cat classes here inherited from mammal
+class Mammal:
+    def walk(self):
+        print("walk")
+
+
+class Dog(Mammal):
+    pass
+
+
+class Cat(Mammal):
+    pass
+
+dog1 = Dog()
+dog1.walk()
+>>walk
+---------------------
+Modules
