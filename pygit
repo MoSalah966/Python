@@ -757,3 +757,6 @@ dog1.walk()
 >>walk
 ---------------------
 Modules
+modules are files that organize our code
+------------------
+Packages
